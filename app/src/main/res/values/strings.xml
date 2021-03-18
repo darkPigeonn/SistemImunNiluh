@@ -1,3 +1,73 @@
 <resources>
-    <string name="app_name">SistemImunNiluh</string>
+    <string name="app_name">sistemPertahananTubuh_new</string>
+    <string name="link_video_1"><b>Sistem Kekebalan Tubuh: </b>https://www.youtube.com/watch?v=48H59dwQO8Y</string>
+    <string name="link_video_2"><b>Sistem kekebalan tubuh: kekebalan bawaan dan adaptif: </b>https://www.youtube.com/watch?v=PzunOgYHeyg </string>
+    <string name="link_video_3"><b>Biologi Kelas 11: Sistem Pertahanan Tubuh Spesifik dan Sistem Pertahanan Non-Spesifik: </b>https://www.youtube.com/watch?v=B-0Ryg_hvHk</string>
+    <string name="link_video_4"><b>Apa itu sel darah putih:</b> https://www.youtube.com/watch?v=Q3yX49JRaks</string>
+    <string name="link_video_5"><b>Apa itu Inflamasi?: </b>https://www.youtube.com/watch?v=alO_csFxHhQ</string>
+    <string name="link_video_6"><b>Fagositosis sel darah putih: </b>https://www.youtube.com/watch?v=C0FDq5gdGls</string>
+    <string name="link_video_7"><b>Hari kesehatan nasional: mengenal penyakit autoimun yang banyak tak disadari gejalanya: </b>https://www.youtube.com/watch?v=xqWeCXiLHnc </string>
+    <string name="link_video_8"><b>Bagaimana Virus Corona Menyerang Sistem Kekebalan Tubuh: </b>https://www.youtube.com/watch?v=ftNCj06d7KE</string>
+    <string name="link_video_9"><b>Cara meningkatkan sistem imun tubuh #BelajardiRumah: </b>https://www.youtube.com/watch?v=IdWx4hC375Y</string>
+    <string name="link_gambar_1">Lapisan pertahanan tubuh terhadap penyakit. Sumber: <i> http://biologitopibiru.blogspot.com/2013/04/bagian-11-sistem-pertahanan-tubuh-pada.html. Diunduh 26 Januari 2021</i></string>
+    <string name="link_gambar_2">Mekanisme pembentukan kekebalan tubuh. Sumber:https://docplayer.info/110358455-Sistem-pertahanan-tubuh-manusia.html. Diunduh 26 Januari 2021</string>
+    <string name="link_gambar_3">Pertahanan tubuh non-spesifik (inflamasi) Sumber: https://www.nafiun.com/2012/12/pertahanan-tubuh-dengan-cara-peradangan-inflamatori.html. Diunduh 26 Januari 2021</string>
+    <string name="link_gambar_4">Proses fagositosis Sumber: https://sandurezu.wordpress.com/2010/12/12/sistem-imunitas-alamiah-tubuh-non-spesifik/. 18 Januari 2021.</string>
+    <string name="link_gambar_5">Makrofag yang sedang memakan patogen/bakteri Sumber: https://www.nafiun.com/2012/12/pertahanan-tubuh-dengan-cara-peradangan-inflamatori.html. Diunduh 26 Januari 2021</string>
+    <string name="link_gambar_6">Mekanisme penghancuran bakteri oleh protein komplemen. Sumber:
+https://www.nafiun.com/2012/12/sistem-pertahanan-tubuh-menggunakan-protein-pelindung.html. 18 Januari 2021.
+</string>
+    <string name="link_gambar_7">Gangguan sistem kekebalan tubuh berupa Alergi
+Sumber:
+https://tirto.id/daftar-obat-obat-alergi-dari-bahan-kimia-dan-alami-efnp. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_8">Penyakit autoimun: <i>Myasthenia gravis</i>
+Sumber:
+https://www.webmd.com/brain/ss/slideshow-myasthenia-gravis-guide. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_9">Penyakit autoimun: <i>Graves disease.</i>
+Sumber:
+https://www.healio.com/news/endocrinology/20200903/thyroid-eye-disease-present-in-40-of-people-with-graves-disease. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_10">Penyakit autoimun: Lupus.
+
+Sumber:
+https://www.medicinenet.com/systemic_lupus/article.htm. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_11">Imunodefisiensi primer, yakni <i>Severe Combined Immunodeficiency / (bubble boy disease)</i>
+Sumber:
+https://capitolweekly.net/state-targets-bubble-boy-syndrome/. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_12">Imunodefisiensi primer, yakni <i>Sindrom DiGeorge.</i>
+
+Sumber:
+https://doktersehat.com/digeorge-syndrome/. Diunduh pada 30 Januari 2021
+</string>
+    <string name="link_gambar_13">Imunodefisiensi sekunder, yakni Limfoma
+Sumber:
+https://akurat.co/id-319690-read-tidak-mau-terkena-limfoma-lakukan-hal-ini. Diunduh pada 30 Januari 2021
+</string>
+    <string name="sumber_buku"><b>Sumber Buku</b></string>
+    <string name="sumber_buku1">Omegawati, W., dkk. 2020. <i>Biologi untuk SMA/MA peminatan
+        matematika dan ilmu-ilmu alam.</i> Yogyakarta.
+                     PT Penerbit Intan Pariwara.
+    </string>
+    <string name="sumber_buku2">Irnaningtyas. &amp; Istiadi, Y. 2016. <i>BIOLOGI untuk SMA/MA
+        edisi revisi.</i> Jakarta. PT ERLANGGA.
+    </string>
+
+    <string name="sumber_inet"><b>Sumber Internet</b></string>
+    <string name="sumber_inet1"><i>https://www.dictio.id/t/apa-saja-tanda-tanda-inflamasi/6353.</i> Diunduh pada 18 Januari 2021.</string>
+    <string name="sumber_inet2"><i>https://sandurezu.wordpress.com/2010/12/12/sistem-imunitas-alamiah-tubuh-non-spesifik/.</i> Diunduh pada 18 Januari 2021.</string>
+    <string name="sumber_inet3"><i>https://www.nafiun.com/2012/12/sistem-pertahanan-tubuh-menggunakan-protein-pelindung.html.</i> Diunduh pada 18 Januari 2021.</string>
+    <string name="sumber_inet4"><i>https://www.nafiun.com/2012/12/struktur-dan-fungsi-molekul-antigen-dan-antibodi.html.</i> Diunduh pada 25 Januari 2021.</string>
+    <string name="sumber_inet5"><i>https://www.nafiun.com/2012/12/struktur-dan-fungsi-molekul-antigen-dan-antibodi.html.</i> Diunduh pada 26 Januari 2021</string>
+    <string name="sumber_inet6"><i>https://www.pelajaran.co.id/2018/07/pengertian-sifat-fungsi-struktur-dan-jenis-antibodi.html.</i> Diunduh pada 26 Januari 2021</string>
+    <string name="petunjuk_pilgan">petunjuk pengerjaan: pilihlah satu jawaban yang paling benar!</string>
+    <string name="tanya1"><b>Kondisi mata pada gambar di atas, disebabkan oleh adanya gangguan autoimun, yaitu:</b></string>
+    <string name="tanya1_a"><b>a. antibodi TSI menyerang sel-sel di kelenjar tiroid</b></string>
+    <string name="tanya1_b"><b>b. antibodi menyerang reseptor asetilkolin</b></string>
+    <string name="tanya1_c"><b>c. antibodi menyerang sel-sel beta pankreas</b></string>
+    <string name="tanya1_d"><b>d. antibodi menyerang selubung mielin di sel saraf</b></string>
+    <string name="tanya1_e"><b>e. mastosit memicu peradangan di persendian</b></string>
 </resources>
