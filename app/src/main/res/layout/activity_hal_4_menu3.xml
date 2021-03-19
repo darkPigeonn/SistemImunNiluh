@@ -108,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageButton
-                android:id="@+id/b4"
+                android:id="@+id/b_menu_vid_img"
                 android:layout_width="95dp"
                 android:layout_height="88dp"
                 android:background="@drawable/button_4"></ImageButton>
