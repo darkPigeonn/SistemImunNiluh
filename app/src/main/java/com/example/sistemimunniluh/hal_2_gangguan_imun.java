@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_2_gangguan_imun extends AppCompatActivity {
 
-    Button menu_materi, back;
+    Button home_imun, menu_materi;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -18,8 +18,17 @@ public class hal_2_gangguan_imun extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_2_gangguan_imun);
 
-        menu_materi = findViewById(R.id.b_menu_materi);
-        back = findViewById(R.id.btnbck);
+        home_imun = findViewById(R.id.btnhome);
+        menu_materi.findViewById(R.id.b_menu_materi);
+
+        home_imun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_2_gangguan_imun.this, hal_2_menu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,13 +39,6 @@ public class hal_2_gangguan_imun extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_2_gangguan_imun.this, hal_2_jenis_gangguan.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
     }
 }

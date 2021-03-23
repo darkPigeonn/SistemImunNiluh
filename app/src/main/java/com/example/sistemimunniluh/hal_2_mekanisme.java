@@ -9,7 +9,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_2_mekanisme extends AppCompatActivity {
-Button pertahanan_adaptif, pertahanan_alamiah, home_imun, back;
+Button pertahanan_adaptif, pertahanan_alamiah, home_imun, menu_materi;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -20,7 +20,7 @@ Button pertahanan_adaptif, pertahanan_alamiah, home_imun, back;
         pertahanan_adaptif = findViewById(R.id.b_adaptif);
         pertahanan_alamiah = findViewById(R.id.b_alami);
         home_imun = findViewById(R.id.btnhome);
-        back = findViewById(R.id.btnbck);
+        menu_materi.findViewById(R.id.b_menu_materi);
 
         pertahanan_adaptif.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,13 +43,13 @@ Button pertahanan_adaptif, pertahanan_alamiah, home_imun, back;
         home_imun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_mekanisme.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_2_mekanisme.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
+        menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(hal_2_mekanisme.this, hal_3_menu2.class);

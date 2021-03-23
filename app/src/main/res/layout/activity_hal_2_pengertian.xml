@@ -8,29 +8,26 @@
     android:background="@drawable/back_pengertian">
 
     <LinearLayout
-        android:id="@+id/ln1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:padding="5dp"
+        android:padding="10dp"
         android:scaleX="1"
         android:scaleY="1">
 
-
         <ImageView
-            android:id="@+id/b_menu_materi"
+            android:id="@+id/btnhome"
             android:layout_width="wrap_content"
-            android:layout_height="63dp"
-            android:background="@drawable/button_5"></ImageView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home"></ImageView>
 
         <ImageView
-            android:id="@+id/btnbck"
+            android:id="@+id/btnhome2"
             android:layout_width="62dp"
             android:layout_height="62dp"
-            android:background="@drawable/button_back"></ImageView>
-
+            android:background="@drawable/button_5"></ImageView>
     </LinearLayout>
 
 </RelativeLayout>

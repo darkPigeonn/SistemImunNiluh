@@ -9,7 +9,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_3_menu2 extends AppCompatActivity {
-Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu_materi, glosarium, daftar_pustaka;
+Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu_materi, glosarium, daftar_pustaka, main_home;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -24,6 +24,7 @@ Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu
         menu_materi = findViewById(R.id.b_menu_materi);
         glosarium = findViewById(R.id.btnglosa);
         daftar_pustaka = findViewById(R.id.btndaftar_pustaka);
+        main_home = findViewById(R.id.b_main_home);
 
         pengertian_fungsi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +84,15 @@ Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(hal_3_menu2.this, hal_10_daftarPustaka.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        main_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_3_menu2.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }

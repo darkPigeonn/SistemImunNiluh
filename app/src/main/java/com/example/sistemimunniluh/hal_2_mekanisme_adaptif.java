@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_2_mekanisme_adaptif extends AppCompatActivity {
 
-    Button menu_materi, back;
+    Button home_imun, menu_materi;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -18,22 +18,22 @@ public class hal_2_mekanisme_adaptif extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal2_kp);
 
-        menu_materi = findViewById(R.id.b_menu_materi);
-        back = findViewById(R.id.btnbck);
+        home_imun = findViewById(R.id.btnhome);
+        menu_materi.findViewById(R.id.b_menu_materi);
 
-        menu_materi.setOnClickListener(new View.OnClickListener() {
+        home_imun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_mekanisme_adaptif.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_2_mekanisme_adaptif.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
+        menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_mekanisme_adaptif.this, hal_2_mekanisme.class);
+                Intent intent = new Intent(hal_2_mekanisme_adaptif.this, hal_3_menu2.class);
                 startActivity(intent);
                 finish();
             }
