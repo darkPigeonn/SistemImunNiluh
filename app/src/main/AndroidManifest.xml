@@ -34,14 +34,14 @@
         <activity android:name=".hal_4_menu3_video" />
         <activity android:name=".hal_3_menu2" />
         <activity android:name=".hal_2_menu" >
+
+        </activity>
+        <activity android:name=".hal_1_welcome" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".hal_1_welcome" >
-
         </activity>
         <activity android:name=".chatroom"></activity>
         <activity android:name=".MainActivity">

@@ -5,8 +5,22 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_hal4_6">
 
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+        <ImageView
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:src="@drawable/judul_apersepsi" />
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_margin="5dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -34,7 +48,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+
                         android:text="1."
                         android:textColor="@color/black"
                         android:textSize="25dp" />
@@ -42,8 +56,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="30dp"
+                        android:justificationMode="inter_word"
                         android:text="@string/aper_1"
+                        android:padding="5dp"
                         android:textColor="@color/black"
                         android:textSize="25dp" />
                 </LinearLayout>
@@ -61,11 +76,15 @@
                         android:text="2."
                         android:textColor="@color/black"
                         android:textSize="25dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/aper_2"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
 
-                    <ImageView
-                        android:layout_width="344dp"
-                        android:layout_height="116dp"
-                        android:src="@drawable/image_aper" />
 
                 </LinearLayout>
 
@@ -83,13 +102,10 @@
                         android:textColor="@color/black"
                         android:textSize="25dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="125dp"
-                        android:padding="10dp"
-                        android:text="@string/aper_sumber"
-                        android:textColor="@color/black"
-                        android:textSize="15dp" />
+                    <ImageView
+                        android:layout_width="344dp"
+                        android:layout_height="116dp"
+                        android:src="@drawable/image_aper" />
 
                 </LinearLayout>
 
@@ -111,7 +127,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="@string/aper_2"
+                        android:justificationMode="inter_word"
+                        android:text="@string/aper_21"
                         android:textColor="@color/black"
                         android:textSize="25dp" />
                 </LinearLayout>
@@ -119,18 +136,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/ln1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="0dp">
-        <ImageView
-            android:layout_width="397dp"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:src="@drawable/judul_apersepsi" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ln3"

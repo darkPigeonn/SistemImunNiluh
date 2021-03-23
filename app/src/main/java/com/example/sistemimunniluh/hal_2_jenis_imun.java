@@ -16,7 +16,7 @@ public class hal_2_jenis_imun extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hal2_kp);
+        setContentView(R.layout.activity_hal_2_jenis_imun);
 
         menu_materi = findViewById(R.id.b_menu_materi);
         back = findViewById(R.id.btnbck);
