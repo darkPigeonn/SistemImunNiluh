@@ -17,11 +17,6 @@
         android:padding="5dp"
         android:scaleX="1"
         android:scaleY="1">
-        <ImageView
-            android:id="@+id/b_profil"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/button_7"></ImageView>
     </LinearLayout>
 
 </RelativeLayout>

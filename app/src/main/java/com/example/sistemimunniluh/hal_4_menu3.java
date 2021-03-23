@@ -1,5 +1,6 @@
 package com.example.sistemimunniluh;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,14 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 public class hal_4_menu3 extends AppCompatActivity {
 Button penguatan_karakter, video, gambar, menu_vid_img;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_4_menu3);
 
-        video.findViewById(R.id.b_video);
-        gambar.findViewById(R.id.b_gambar);
-        menu_vid_img.findViewById(R.id.b_menu_vid_img);
+        video = findViewById(R.id.b_video);
+        gambar = findViewById(R.id.b_gambar);
+        menu_vid_img = findViewById(R.id.b_menu_vid_img);
 
 video.setOnClickListener(new View.OnClickListener() {
     @Override

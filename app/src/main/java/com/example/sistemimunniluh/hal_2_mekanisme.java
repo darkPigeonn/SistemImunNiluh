@@ -1,5 +1,6 @@
 package com.example.sistemimunniluh;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,15 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class hal_2_mekanisme extends AppCompatActivity {
 Button pertahanan_adaptif, pertahanan_alamiah, home_imun, back;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_2_mekanisme);
 
-        pertahanan_adaptif.findViewById(R.id.b_adaptif);
-        pertahanan_alamiah.findViewById(R.id.b_alami);
-        home_imun.findViewById(R.id.btnhome);
-        back.findViewById(R.id.btnbck);
+        pertahanan_adaptif = findViewById(R.id.b_adaptif);
+        pertahanan_alamiah = findViewById(R.id.b_alami);
+        home_imun = findViewById(R.id.btnhome);
+        back = findViewById(R.id.btnbck);
 
         pertahanan_adaptif.setOnClickListener(new View.OnClickListener() {
             @Override

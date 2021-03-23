@@ -60,10 +60,11 @@
         android:scaleY="1">
 
 
-        <ImageView android:id="@+id/btnhome"
+        <ImageView
+            android:id="@+id/b_menu_materi"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_home"></ImageView>
+            android:layout_height="61dp"
+            android:background="@drawable/button_5"></ImageView>
 
         <ImageView
             android:id="@+id/btnbck"
