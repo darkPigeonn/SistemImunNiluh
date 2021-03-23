@@ -11,6 +11,7 @@ public class Question {
     private String mOption2;
     private String mOption3;
     private String mOption4;
+    private String mOption5;
     private String mAnswer;
     private String mCategory;
 
@@ -18,12 +19,13 @@ public class Question {
     Question() {
     }
 
-    Question(String mQuestion, String option1, String option2, String option3, String option4, String answer, String category) {
+    Question(String mQuestion, String option1, String option2, String option3, String option4,String option5 ,String answer, String category) {
         this.mQuestion = mQuestion;
         this.mOption1 = option1;
         this.mOption2 = option2;
         this.mOption3 = option3;
         this.mOption4 = option4;
+        this.mOption5 = option5;
         this.mAnswer = answer;
         this.mCategory = category;
     }
@@ -46,6 +48,10 @@ public class Question {
 
     public String getmOption4() {
         return mOption4;
+    }
+
+    public String getmOption5() {
+        return mOption5;
     }
 
     public String getmAnswer() {
@@ -74,6 +80,10 @@ public class Question {
 
     public void setmOption4(String mOption4) {
         this.mOption4 = mOption4;
+    }
+
+    public void setmOption5(String mOption5) {
+        this.mOption5 = mOption5;
     }
 
     public void setmAnswer(String mAnswer) {

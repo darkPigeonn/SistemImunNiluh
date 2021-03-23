@@ -22,12 +22,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "quizzes.db";
     private static final int DB_VERSION = 8;
 
-    public static final String CATEGORY_MTK = "matematika";
-    public static final String CATEGORY_IPA = "ipa";
-    public static final String CATEGORY_IPS = "ips";
-    public static final String CATEGORY_AGAMA = "agama";
-    public static final String CATEGORY_OLAHRAGA = "olahraga";
-    public static final String CATEGORY_PROGRAM = "pemrograman";
+    public static final String CATEGORY_BIOLOGI = "biologi";
+
 
     private final String CREATE_TABLE_QUERY = "CREATE TABLE " + QuizContract.QuestionsTable.TABLE_NAME +
             "(" +
@@ -37,6 +33,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
             QuestionsTable.COLUMN_OPTION2 + " TEXT, " +
             QuestionsTable.COLUMN_OPTION3 + " TEXT, " +
             QuestionsTable.COLUMN_OPTION4 + " TEXT, " +
+            QuestionsTable.COLUMN_OPTION5 + " TEXT, " +
             QuestionsTable.COLUMN_ANSWER + " TEXT, " +
             QuestionsTable.COLUMN_CATEGORY + " TEXT" +
             ")";
@@ -50,6 +47,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
     public QuizDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
+
     }
 
     @Override
@@ -70,48 +68,100 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private void setUpQuestions() {
         mQuestionList = new ArrayList<>();
 
-        //questions for category agama
-        mQuestionList.add(new Question("Berikut ini adalah cara-cara bersyukur kepada Allah SWT, kecuali...", "Membaca hamdalah", "Mengerjakan salat lima waktu", "Berpuasa sepanjang waktu", "Belajar dan mengaji Al-Quran", "Berpuasa sepanjang waktu", CATEGORY_AGAMA));
-        mQuestionList.add(new Question("Arti fana yakni...", "Kekal", "Tidak kekal", "Abadi", "Selamanya", "Tidak kekal", CATEGORY_AGAMA));
-        mQuestionList.add(new Question("Batas antara alam dunia dengan alam akhirat disebut...", "Alam barzah", "Yaumul hisab", "Yaumul mahsyar", "Yaumul ba’as", "Alam barzah", CATEGORY_AGAMA));
-        mQuestionList.add(new Question("Kiamat kecil di kenal dengan istilah...", "Kiamat Kubro", "Kiamat Sugro", "Kiamat Zalzalah", "Hari Akhir", "Kiamat Sugro", CATEGORY_AGAMA));
-        mQuestionList.add(new Question("Wukuf di Padang Arafah adalah salah satu...", "Syarat wajib Haji", "Sunnah Haji", "Jenis ibadah Haji", "Rukun Haji", "Rukun Haji", CATEGORY_AGAMA));
 
-//        //questions for category ips
-//        mQuestionList.add(new Question("Sosiologi mempunyai empat ciri ilmu, salah satunya adalah ilmu sosiologi selalu berusaha menyusun abstraksi dari hasil observasi yang konkret di lapangan. Ciri sosiologi tersebut dikenal dengan istilah...", "teoritis", "empiris", "kumulatif", "khayalan", "teoritis", CATEGORY_IPS));
-//        mQuestionList.add(new Question("Objek sosiologi yang menjelaskan tentang gejala-gejala kehidupan sosial dan proses hubungan antar manusia yang mempengaruhi kesatuan hidup manusia itu sendiri merupakan objek sosiologi...", "material", "formal", "primer", "sekunder", "material", CATEGORY_IPS));
-//        mQuestionList.add(new Question("Seorang pemimpin upacara bendera menyiapkan peserta upacara setelah diberi instruksi oleh pembina upacara. Dari contoh di atas interaksi terjadi karena memenuhi syarat...", "kontak dan pertemuan", "kontak dan komunikasi", "pengertian dan komunikasi", "kontak dan sugesti", "kontak dan komunikasi", CATEGORY_IPS));
-//        mQuestionList.add(new Question("Negara Amerika Serikat banyak melakukan investasi seperti peminjaman dana pembangunan untuk Indonesia sebagai negara berkembang. Peminjaman dana pembangunan yang dilakukan Amerika di Indonesia adalah globalisasi dalam bentuk...", "globalisasi perdagangan", "globalisasi pembiayaan", "globalisasi produksi", "globalisasi pembanguna", "globalisasi pembiayaan", CATEGORY_IPS));
-//        mQuestionList.add(new Question("Sekelompok pemuda yang biasa berkumpul di terminal untuk mabuk-mabukan ditangkap polisi karena sering membuat resah para calon penumpang karena perilaku mereka yang tidak terkendali. Kelompok sosial ini termasuk...", "inconvenient aggregations", "panic crowds", "immoral crowds", "spectator crowds", "immoral crowds", CATEGORY_IPS));
-//
-//        //questions for category ipa
-//        mQuestionList.add(new Question("Berikut ini merupakan komponen biotik di alam adalah...", "Tanah liat", "Batu bata", "Air laut", "Jasad renik", "Jasad renik", CATEGORY_IPA));
-//        mQuestionList.add(new Question("Upaya meminimalisasi sampah hasil limbah rumah tangga agar tidak mencemari perairan dapat dilakukan dengan cara mendaur ulang sampah-sampah di sekitar kita. Seperti dibuat menjadi kompos, kerajinan tangan, dan benda berguna lainnya. Upaya tersebut disebut dengan istilah...", "Recycle", "Reuse", "Reduce", "Repair", "Recycle", CATEGORY_IPA));
-//        mQuestionList.add(new Question("Batu ginjal merupakan penyakit berbahaya pada sistem ekskresi manusia. Salah satu cara yang dapat dilakukan untuk mencegah penyakit tersebut adalah...", "Banyak mengonsumsi garam mineral", "Banyak mengonsumsi minuman beralkohol", "Banyak mengonsumsi makanan yang mengandung pewarna", "Banyak mengonsumsi air putih", "Banyak mengonsumsi air putih", CATEGORY_IPA));
-//        mQuestionList.add(new Question("Penyakit menular pada alat kelamin manusia yang disebabkan oleh bakteri Treponema pallidum disebut...", "HIV", "Gonorhoe", "Sifilis", "Keputihan", "Sifilis", CATEGORY_IPA));
-//        mQuestionList.add(new Question("Berikut ini merupakan kondisi yang dapat terjadi jika organ hati rusak adalah...", "Terganggunya fungsi sistem organ", "Dapat menimbulkan penyakit", "Akumulasi suatu toksik dalam tubuh", "Semua jawaban benar", "Semua jawaban benar", CATEGORY_IPA));
-//
-//        //questions for category pemrograman
-//        mQuestionList.add(new Question("Dalam menyusun suatu program,langkah pertama yang harus di lakkukan adalah...", "Membuat program", "Membuat Algoritma", "Proses", "Mempelajari program", "Membuat Algoritma", CATEGORY_PROGRAM));
-//        mQuestionList.add(new Question("Pemberian nama variabel yang benar adalah...", "%nilai", "nilai_mahasiswa", "NamaMahasiswa", "&panjang", "nilai_mahasiswa", CATEGORY_PROGRAM));
-//        mQuestionList.add(new Question("Suatu program terpisah dalam blok sendiri yang berfungsi sebagai subprogram (program bagian) disebut...", "Variabel", "Deklarasi", "Prosedur", "Constructor", "Prosedur", CATEGORY_PROGRAM));
-//        mQuestionList.add(new Question("Istilah \"perulangan\" dalam pemograman pascal dikenal dengan...", "Repeating", "Funtion", "Looping", "Replay", "Looping", CATEGORY_PROGRAM));
-//        mQuestionList.add(new Question("Tipe data untuk TRUE FALSE adalah...", "String", "Boolean", "Byte", "Char", "Boolean", CATEGORY_PROGRAM));
-//
-//        //questions for category olahraga
-//        mQuestionList.add(new Question("Serangan pertama kali untuk memulai permainan dalam permainan bola voli adalah pengertian dari...", "Smash", "Block", "Servis", "Passing", "Servis", CATEGORY_OLAHRAGA));
-//        mQuestionList.add(new Question("Setiap set dalam permainan bola voli berakhir ketika salah satu tim memperoleh nilai...", "11 poin", "15 poin", "21 poin", "25 poin", "25 poin", CATEGORY_OLAHRAGA));
-//        mQuestionList.add(new Question("Menyundul bola di sebut juga dengan...", "Shooting", "Heading", "Passing", "Block", "Heading", CATEGORY_OLAHRAGA));
-//        mQuestionList.add(new Question("Tembakan sambil melompat dalam bola basket di sebut juga dengan istilah...", "Jump Shoot", "Lay Up", "Rebound", "Pivot", "Jump Shoot", CATEGORY_OLAHRAGA));
-//        mQuestionList.add(new Question("Rencana untuk melakukan suatu penyerangan atau pertahanan sebelum pertandingan di sebut...", "Taktik", "Tehnik", "Formasi", "Strategi", "Strategi", CATEGORY_OLAHRAGA));
-//
-//        //questions for category matematika
-//        mQuestionList.add(new Question("Hasil dari -4 + 8 : (-2) x 2 + 5 -2 adalah...", "-9", "-7", "7", "9", "-9", CATEGORY_MTK));
-//        mQuestionList.add(new Question("Sebuah toko kue selama 8 hari dapat membuat 240 kotak kue. Banyak kue yang dapat dibuat oleh toko tersebut selama 12 hari adalah...", "160 kotak", "260 kotak", "360 kotak", "460 kotak", "360 kotak", CATEGORY_MTK));
-//        mQuestionList.add(new Question("Pak Arif membeli motor dengan harga Rp15.000.000,00 dan dijual lagi dengan harga Rp16.500.000,00. Berapa perentase keuntungan yang diperoleh?", "1%", "1,5%", "10%", "15%", "10%", CATEGORY_MTK));
-//        mQuestionList.add(new Question("Berat rata-rata dari 12 siswa adalah 55 kg dan berat rata-rata 15 orang lainya adalah 45 Berat rata-rata dari keseluruhan kedua kelompok tersebut adalah...", "47 kg", "48 kg", "49 kg", "50 kg", "49 kg", CATEGORY_MTK));
-//        mQuestionList.add(new Question("Sebuah lapangan berbentuk lingkaran dengan diameter 56 m. Di sekeliling lapangan akan dipasang lampu dengan jarak 4 m. Berapa banyak lampu yang diperlukan?", "24 buah", "30 buah", "34 buah", "44 buah", "44 buah", CATEGORY_MTK));
-//
+//no 1
+        mQuestionList.add(new Question("Sel B merupakan limfosit yang berperan dalam respon kekebalan humoral. " +
+                "Terdapat tiga macam sel B. Salah satunya adalah sel B pengingat. Sel ini berfungsi mengingat antigen yang pernah masuk " +
+                "ke tubuh serta menstimulasi pembentukan......",
+                "Antibodi atau immunoglobulin",
+                "Sel T pembantu untuk mengaktivasi makrofag",
+                "Sel B pembelah oleh sel B plasma",
+                "Sel B plasma saat terjadi infeksi kedua",
+                "Sel T supresor untuk menghentikan respon imun."
+                ,"Sel B plasma saat terjadi infeksi kedua", CATEGORY_BIOLOGI));
+
+                //no 2
+                mQuestionList.add(new Question("Perhatikan gambar antibodi berikut ini! Antibodi seperti gambar di atas dapat ditemukan pada....",
+                "Basofil", "Air Mata",
+                "Plasenta", "Plasma darah",
+                "Permukaan limfofist B."
+                ,"Air Mata", CATEGORY_BIOLOGI));
+                //no 3
+                mQuestionList.add(new Question("3.\tSeseorang yang pernah menderita cacar air memiliki risiko yang rendah untuk terkena penyakit yang sama untuk kedua kalinya. Hal tersebut dikarenakan orang tersebut telah mendapatkan......",
+                "Kekebalan aktif alami",
+                "Kekebalan pasif alami",
+                "Kekebalan aktif buatan",
+                "Kekebalan pasif buatan",
+                "Kekebalan pasif"
+                ,"Kekebalan aktif alami", CATEGORY_BIOLOGI));
+                //no 4
+                mQuestionList.add(new Question("Perhatikan pernyataan-pernyataan berikut ini!\n" +
+                "1)\tPemberian serum antivenom setelah terkena gigitan ular berbisa\n" +
+                "2)\tPemberian kolostrum bagi anak-anak yang baru dilahirkan\n" +
+                "3)\tImunisasi Japanese-Encephalitis (JE) untuk mencegah penyakit radang otak\n" +
+                "4)\tPemberian serum antibodi poliklonal antitetradoksin bagi orang yang mengonsumsi ikan fugu\n" +
+                "5)\tInjeksi racun tetanus yang sudah diinaktivasi\n" +
+                "Berdasarkan pernyataan di atas, kekebalan pasif diperoleh melalui tindakan yang ditujukkan oleh nomor.....\n",
+                "1),2), dan 3)", "1),2), dan 4)",
+                "1),3), dan 4)", "2),3), dan 4)",
+                "2),3), dan 5)"
+                ,"1),2), dan 4)", CATEGORY_BIOLOGI));
+
+                //no 5
+                mQuestionList.add(new Question("Berdasarkan jenis antigen yang terkandung di dalamnya, vaksin dibedakan menjadi live attenuated vaccine, inactivated vaccine, subunit vaccine, dan Vaksin toksoid. Contoh live attenuated vaccine dan inactivated vaccine yang benar secara berurutan adalah....",
+                "live attenuated vaccine : IPV dan PCV \n" +
+                "inactivate vaccine : OPV dan Vaksin HiB",
+                "live attenuated vaccine : IPV dan Vaksin Campak \n" +
+                "inactivate vaccine : OPV dan whole-cell pertussis vaccine",
+                "live attenuated vaccine : IPV dan Vaksin Tetanus \n" +
+                "inactivate vaccine : OPV dan PCV",
+                "live attenuated vaccine : OPV dan PCV \n" +
+                "inactivate vaccine : IPV dan Vaksin HiB",
+                "live attenuated vaccine : OPV dan Vaksin Campak \n" +
+                "inactivate vaccine : IPV dan whole-cell pertussis vaccine"
+                ,"live attenuated vaccine : OPV dan Vaksin Campak \n" +
+                "inactivate vaccine : IPV dan whole-cell pertussis vaccine",
+                CATEGORY_BIOLOGI));
+
+                //no 6
+                mQuestionList.add(new Question("Saat berwisata ke Cina, Farhan menderita nyeri sendi dan otot , sakit kepala, mengigil, serta menurunnya nafsu makan. Beberapa hari setelahnya, ia mengalami muntah darah, sakit perut, kejang, serta kegagalan hati dan ginjal. Hasil diagnosis dokter, Farhan mengalami penyakit endemis di daerah tempat wisata yang dikunjunginya. Penyakit tersebut dapat dicegah apabila sebelum berangkat ke Eropa Farhan menerima imunisasi.......",
+                "JE", "Polio",
+                "Ebola", "Demam kuning",
+                "Meningococcus"
+                ,"JE", CATEGORY_BIOLOGI));
+
+                //no 7
+                mQuestionList.add(new Question("7.\tJenis imunisasi ini hanya diberikan satu kali kepada bayi, yaitu saat usia 0-2 bulan. Imunisasi ini berfungsi mencegah penyakit yang diakibatkan oleh Mycrobacterium tuberculosis. Jenis imunisasi yang dimaksud adalah imunisasi.........",
+                "HiB", "HB",
+                "DTPa", "Pentavalen",
+                "BCG"
+                ,"BCG", CATEGORY_BIOLOGI));
+
+                //no 8
+                mQuestionList.add(new Question("Salah satu komponen yang berperan dalam sistem pertahanan dalam sistem pertahanan nonspesifik adalah protein komplemen yang melakukan pertahanan dengan cara..........",
+                "Berikatan dengan sel yang tidak terinfeksi sehingga sel tersebut memproduksi zat yang mampu mencegah replikasi virus",
+                "Memproduksi histamin dan prostaglandin",
+                "Memicu sel B plasma untuk memproduksi antibodi",
+                "Melakukan penelanan partikel asing melalui proses fagositosis",
+                "Membentuk lubang pada dinding sel dan membran plasma bakteri"
+                ,"Membentuk lubang pada dinding sel dan membran plasma bakteri", CATEGORY_BIOLOGI));
+
+                //no 9
+                mQuestionList.add(new Question("Bakteri Streptococcus pneumoniae merupakan patogen yang dapat menyebabkan penyakit radang paru-paru atau pneumonia pada manusia. Saat masuk ke dalam tubuh, bakteri ini akan langsung dikeluarkan oleh silia di trakea. Mekanisme pertahanan tubuh oleh silia tersebut merupakan bentuk pertahanan......",
+                "Kimiawi", "Fisik",
+                "Mekanis", "Spesifik",
+                "Biologis"
+                ,"Mekanis", CATEGORY_BIOLOGI));
+
+                //no 10
+                mQuestionList.add(new Question("Perhatikan proses fagositosis berikut ini!Peristiwa pada fagositosis yang ditunjuk huruf X adalah.....",
+                "Partikel asing melekat pada reseptor membran fagosit.",
+                "Enzim acid hydrolase dan peroxidase mencerna seluruh partikel asing hingga hancur.",
+                "Partikel mengeluarkan zat yang dapat menarik fagosit untuk mendekat.",
+                "Fagosit mati bersamaan dengan matinya sel-sel tubuh yang terinfeksi dan patogen.",
+                "Membran fagosit menyelubungi seluruh permukaan partikel asing dan menelannya ke sitoplasma. "
+                ,"Enzim acid hydrolase dan peroxidase mencerna seluruh partikel asing hingga hancur.", CATEGORY_BIOLOGI));
+
     }
 
     private void insertQuestions() {
@@ -122,6 +172,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
             contentValues.put(QuestionsTable.COLUMN_OPTION2, q.getmOption2());
             contentValues.put(QuestionsTable.COLUMN_OPTION3, q.getmOption3());
             contentValues.put(QuestionsTable.COLUMN_OPTION4, q.getmOption4());
+            contentValues.put(QuestionsTable.COLUMN_OPTION5, q.getmOption5());
             contentValues.put(QuestionsTable.COLUMN_ANSWER, q.getmAnswer());
             contentValues.put(QuestionsTable.COLUMN_CATEGORY, q.getmCategory());
             db.insert(QuestionsTable.TABLE_NAME, null, contentValues);
@@ -142,6 +193,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 question.setmOption2(cursor.getString(cursor.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
                 question.setmOption3(cursor.getString(cursor.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
                 question.setmOption4(cursor.getString(cursor.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
+
+                question.setmOption5(cursor.getString(cursor.getColumnIndex(QuestionsTable.COLUMN_OPTION5)));
                 question.setmAnswer(cursor.getString(cursor.getColumnIndex(QuestionsTable.COLUMN_ANSWER)));
                 questionList.add(question);
             } while (cursor.moveToNext());

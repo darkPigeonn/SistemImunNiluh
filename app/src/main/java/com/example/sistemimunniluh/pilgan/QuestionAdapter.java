@@ -77,6 +77,7 @@ public class QuestionAdapter extends RecyclerView.Adapter {
         RadioButton mRb2;
         RadioButton mRb3;
         RadioButton mRb4;
+        RadioButton mRb5;
 
         ToggleButtonGroupTableLayout mTableLayout;
 
@@ -88,6 +89,7 @@ public class QuestionAdapter extends RecyclerView.Adapter {
             mRb2 = itemView.findViewById(R.id.rb2);
             mRb3 = itemView.findViewById(R.id.rb3);
             mRb4 = itemView.findViewById(R.id.rb4);
+            mRb5 = itemView.findViewById(R.id.rb5);
 
             mTableLayout = itemView.findViewById(R.id.table_layout);
         }
