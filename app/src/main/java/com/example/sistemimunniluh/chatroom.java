@@ -59,7 +59,7 @@ public class chatroom extends AppCompatActivity {
 
         root.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+            public void onChildAdded (DataSnapshot dataSnapshot, String s){
 
                 append_chat_conversatin(dataSnapshot);
 

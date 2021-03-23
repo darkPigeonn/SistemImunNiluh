@@ -1,5 +1,6 @@
 package com.example.sistemimunniluh;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class hal_5_menulatihan extends AppCompatActivity {
 ImageButton pilgan, essay, tugas, evaluasi, menu_materi;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

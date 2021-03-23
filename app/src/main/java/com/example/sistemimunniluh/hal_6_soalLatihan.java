@@ -41,6 +41,18 @@ public class hal_6_soalLatihan extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+////        Bundle categoryBundle = null;
+////        if (getIntent() != null) {
+////            categoryBundle = getIntent().getExtras();
+////        }
+////
+////        mParentLayout = findViewById(R.id.question_layout);
+////        if (categoryBundle != null) {
+////            String hexColor = String.format("#%06X", (0xFFFFFF & categoryBundle.getInt(CATEGORY_COLOR)));
+////            hexColor = "#44"+hexColor.substring(1);
+////            mParentLayout.setBackgroundColor(Color.parseColor(hexColor));
+////        }
+//
         mScoreTextView = findViewById(R.id.score);
         mRemaningQuestionsTextView = findViewById(R.id.remaining_questions);
 
@@ -49,13 +61,13 @@ public class hal_6_soalLatihan extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
         mDbHelper = new QuizDBHelper(this);
-//
-        mQuestionList = mDbHelper.getAllQuestions("biologi");
-        mTotalQuestions = mQuestionList.size();
-        mScore = 0;
-        displayScore();
 
-        mAdapter = new QuestionAdapter(this, mQuestionList, "biologi");
+            mQuestionList = mDbHelper.getAllQuestions("1");
+            mTotalQuestions = mQuestionList.size();
+            mScore = 0;
+            displayScore();
+
+        mAdapter = new QuestionAdapter(this, mQuestionList, "AGAMA");
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
     }

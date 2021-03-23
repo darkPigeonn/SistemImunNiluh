@@ -6,41 +6,34 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.sistemimunniluh.GridFoto.DataForo;
-import com.example.sistemimunniluh.GridFoto.Foto;
-import com.example.sistemimunniluh.GridFoto.GridFotoAdapater;
-
-import java.util.ArrayList;
 
 public class hal_4_menu3_gambar extends AppCompatActivity {
     Button home_imun, back;
-    private RecyclerView rvHeroes;
-    private ArrayList<Foto> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_4_menu3_gambar);
 
-        rvHeroes = findViewById(R.id.rv_heroes);
-        rvHeroes.setHasFixedSize(true);
+        home_imun.findViewById(R.id.btnhome);
+        back.findViewById(R.id.btnbck);
 
-        list.addAll(DataForo.getListData());
-        showRecyclerList();
-    }
+        home_imun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_4_menu3_gambar.this, hal_3_menu2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-    private void showRecyclerList() {
-
-//        rvHeroes.setLayoutManager(new LinearLayoutManager(this));
-//        GridFotoAdapater listHeroAdapter = new GridFotoAdapater(list);
-//        rvHeroes.setAdapter(listHeroAdapter);
-
-        rvHeroes.setLayoutManager(new GridLayoutManager(this, 2));
-        GridFotoAdapater gridHeroAdapter = new GridFotoAdapater(list);
-        rvHeroes.setAdapter(gridHeroAdapter);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_4_menu3_gambar.this, hal_4_menu3.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

@@ -1,14 +1,15 @@
 package com.example.sistemimunniluh;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class hal_4_menu3_penguatan extends AppCompatActivity {
 
-public class hal_2_jenis_gangguan extends AppCompatActivity {
     Button home_imun, back;
 
     @SuppressLint("WrongViewCast")
@@ -23,7 +24,7 @@ public class hal_2_jenis_gangguan extends AppCompatActivity {
         home_imun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_jenis_gangguan.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_4_menu3_penguatan.this, hal_3_menu2.class);
                 startActivity(intent);
                 finish();
             }
@@ -32,7 +33,7 @@ public class hal_2_jenis_gangguan extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_jenis_gangguan.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_4_menu3_penguatan.this, hal_4_menu3.class);
                 startActivity(intent);
                 finish();
             }

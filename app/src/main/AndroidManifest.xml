@@ -27,21 +27,14 @@
         <activity android:name=".hal_7_nilai" />
         <activity android:name=".hal_6_soalLatihan" />
         <activity android:name=".hal_5_menulatihan" />
-
-        <activity android:name=".hal_4_menu3" >
-
-        </activity>
-
-        <activity android:name=".hal_4_menu3_gambar" >
+        <activity android:name=".hal_4_menu3" />
+        <activity android:name=".hal_3_menu2" />
+        <activity android:name=".hal_2_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".hal_3_menu2" />
-        <activity android:name=".hal_2_menu" >
-
         </activity>
         <activity android:name=".hal_1_welcome" >
 
