@@ -17,11 +17,11 @@
         android:padding="5dp"
         android:scaleX="1"
         android:scaleY="1">
-        <ImageView
-            android:id="@+id/b1"
+        <ImageButton
+            android:id="@+id/b1chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_1"></ImageView>
+            android:background="@drawable/button_1"></ImageButton>
     </LinearLayout>
 
 

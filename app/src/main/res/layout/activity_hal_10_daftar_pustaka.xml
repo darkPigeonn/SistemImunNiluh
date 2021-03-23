@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_hal1_2_3_5">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="336dp">
 
         <LinearLayout
-            android:id="@+id/ln2"
+            android:id="@+id/ln1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="80dp"
-            android:paddingBottom="50dp">
+            android:paddingTop="0dp">
+            <ImageView
+                android:layout_width="397dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:src="@drawable/judul_pustaka" />
+
             <LinearLayout
                 android:id="@id/ln2"
                 android:layout_below="@+id/ln1"
@@ -175,48 +183,33 @@
                         android:padding="8dp"/>
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:scaleX="1"
+                android:scaleY="1">
+
+                <ImageView
+                    android:id="@+id/btnhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_home"></ImageView>
+
+                <ImageView
+                    android:id="@+id/btnbck"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/button_back"></ImageView>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-<LinearLayout
-android:id="@+id/ln1"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical"
-android:paddingTop="0dp">
-<ImageView
-    android:layout_width="397dp"
-    android:layout_height="wrap_content"
-    android:paddingTop="20dp"
-    android:src="@drawable/judul_pustaka" />
-</LinearLayout>
-
-
-<LinearLayout
-android:id="@+id/ln3"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentRight="true"
-android:layout_alignParentBottom="true"
-android:orientation="horizontal"
-android:padding="10dp"
-android:scaleX="1"
-android:scaleY="1">
-
-<ImageView
-    android:id="@+id/btnhome"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/button_home"></ImageView>
-
-<ImageView
-    android:id="@+id/btnbck"
-    android:layout_width="62dp"
-    android:layout_height="62dp"
-    android:background="@drawable/button_back"></ImageView>
-</LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
