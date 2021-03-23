@@ -9,13 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SistemPertahananTubuh_new">
-        <activity android:name=".chatroom"></activity>
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".hal_9_glosarium"></activity>
+        <activity android:name=".hal_2_gangguan_imun" />
+        <activity android:name=".hal_2_jenis_imun" />
+        <activity android:name=".hal_2_jenis_gangguan" />
+        <activity android:name=".hal_2_mekanisme_adaptif" />
+        <activity android:name=".hal_2_mekanisme_alami" />
+        <activity android:name=".hal_2_mekanisme" />
+        <activity android:name=".hal_2_faktor" />
+        <activity android:name=".hal_2_pengertian" />
+        <activity android:name=".hal_2_tujuan" />
+        <activity android:name=".hal_2_kikd" />
+        <activity android:name=".hal_2_petunjuk" />
+        <activity android:name=".hal2_kp" />
+        <activity android:name=".hal_8_profilPenyusun" />
+        <activity android:name=".hal_7_nilai" />
+        <activity android:name=".hal_6_soalLatihan" />
+        <activity android:name=".hal_5_menulatihan" />
+        <activity android:name=".hal_4_menu3" />
+        <activity android:name=".hal_3_menu2" />
+        <activity android:name=".hal_2_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".hal_1_welcome" >
+
+        </activity>
+        <activity android:name=".chatroom"></activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

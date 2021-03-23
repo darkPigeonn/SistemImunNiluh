@@ -1,39 +1,83 @@
 package com.example.sistemimunniluh;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.sistemimunniluh.pilgan.Question;
+import com.example.sistemimunniluh.pilgan.QuestionAdapter;
+import com.example.sistemimunniluh.pilgan.QuizDBHelper;
+
+import java.util.ArrayList;
+import java.util.Objects;
+
 
 public class hal_6_soalLatihan extends AppCompatActivity {
-    Button home_imun, back;
+
+    private RecyclerView mRecyclerView;
+    private QuestionAdapter mAdapter;
+    private ArrayList<Question> mQuestionList;
+    private QuizDBHelper mDbHelper;
+
+    private ConstraintLayout mParentLayout;
+    private TextView mScoreTextView;
+    private TextView mRemaningQuestionsTextView;
+    private int mTotalQuestions;
+    private int mScore;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hal2_kp);
+        setContentView(R.layout.activity_hal_6_soal_latihan);
 
-        home_imun.findViewById(R.id.btnhome);
-        back.findViewById(R.id.btnbck);
 
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_6_soalLatihan.this, hal_3_menu2.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_6_soalLatihan.this, hal_5_menulatihan.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+////        Bundle categoryBundle = null;
+////        if (getIntent() != null) {
+////            categoryBundle = getIntent().getExtras();
+////        }
+////
+////        mParentLayout = findViewById(R.id.question_layout);
+////        if (categoryBundle != null) {
+////            String hexColor = String.format("#%06X", (0xFFFFFF & categoryBundle.getInt(CATEGORY_COLOR)));
+////            hexColor = "#44"+hexColor.substring(1);
+////            mParentLayout.setBackgroundColor(Color.parseColor(hexColor));
+////        }
+//
+        mScoreTextView = findViewById(R.id.score);
+        mRemaningQuestionsTextView = findViewById(R.id.remaining_questions);
+
+        mRecyclerView = findViewById(R.id.recyclerView);
+        mRecyclerView.setNestedScrollingEnabled(false);
+        mRecyclerView.setHasFixedSize(true);
+
+        mDbHelper = new QuizDBHelper(this);
+
+            mQuestionList = mDbHelper.getAllQuestions("1");
+            mTotalQuestions = mQuestionList.size();
+            mScore = 0;
+            displayScore();
+
+        mAdapter = new QuestionAdapter(this, mQuestionList, "AGAMA");
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setAdapter(mAdapter);
+    }
+    public void displayScore() {
+        String scoreString = "Score " + mScore + "/" + mTotalQuestions;
+        mScoreTextView.setText(scoreString);
+        mRemaningQuestionsTextView.setText("Remaining: " + mTotalQuestions--);
+    }
+
+    public void updateScore() {
+        mScore++;
     }
 }

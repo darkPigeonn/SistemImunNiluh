@@ -4,22 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_5_menulatihan extends AppCompatActivity {
-Button pilgan, essay, tugas, evaluasi, menu_materi;
+ImageButton pilgan, essay, tugas, evaluasi, menu_materi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_5_menulatihan);
 
-        pilgan.findViewById(R.id.b_pilgan);
-        essay.findViewById(R.id.b_essay);
-        tugas.findViewById(R.id.b_tugas);
-        evaluasi.findViewById(R.id.b_eval);
-        menu_materi.findViewById(R.id.b_menu_materi);
+        pilgan = findViewById(R.id.b_pilgan);
+        essay = findViewById(R.id.b_essay);
+        tugas = findViewById(R.id.b_tugas);
+        evaluasi = findViewById(R.id.b_eval);
+        menu_materi = findViewById(R.id.b_menu_materi);
 
         pilgan.setOnClickListener(new View.OnClickListener() {
             @Override
