@@ -24,7 +24,7 @@
             android:background="@drawable/button_home"></ImageView>
 
         <ImageView
-            android:id="@+id/btnhome2"
+            android:id="@+id/btnhome22"
             android:layout_width="62dp"
             android:layout_height="62dp"
             android:background="@drawable/button_5"></ImageView>

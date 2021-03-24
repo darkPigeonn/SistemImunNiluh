@@ -39,8 +39,10 @@
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="@string/penguatan_1"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="25dp" />
+                        android:textSize="25dp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -55,9 +57,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="304dp"
                         android:padding="8dp"
+                        android:textAlignment="center"
                         android:text="@string/penguatan_2"
                         android:textColor="@color/black"
-                        android:textSize="25dp" />
+                        android:textSize="25dp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -72,9 +76,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="950dp"
                         android:padding="8dp"
+                        android:textAlignment="center"
                         android:text="@string/penguatan_3"
                         android:textColor="@color/black"
-                        android:textSize="25dp" />
+                        android:textSize="25dp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

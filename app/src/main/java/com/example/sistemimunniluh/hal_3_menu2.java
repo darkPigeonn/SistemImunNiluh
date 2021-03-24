@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_3_menu2 extends AppCompatActivity {
-Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu_materi, glosarium, daftar_pustaka, main_home;
+ImageButton pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, home;
+ImageView glosarium, daftar_pustaka;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -17,15 +20,23 @@ Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_3_menu2);
 
+        home = findViewById(R.id.b_main_home);
         pengertian_fungsi = findViewById(R.id.b_pengertian);
         mekanisme_imun = findViewById(R.id.b_mekanisme);
         faktor_imun = findViewById(R.id.b_faktor);
         jenis_gangguan_imun = findViewById(R.id.b_jenisimun);
-        menu_materi = findViewById(R.id.b_menu_materi);
+
         glosarium = findViewById(R.id.btnglosa);
         daftar_pustaka = findViewById(R.id.btndaftar_pustaka);
-        main_home = findViewById(R.id.b_main_home);
 
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_3_menu2.this,hal_2_menu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         pengertian_fungsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,14 +73,7 @@ Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu
             }
         });
 
-        menu_materi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_3_menu2.this, hal_3_menu2.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         glosarium.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,15 +88,6 @@ Button pengertian_fungsi, mekanisme_imun, faktor_imun, jenis_gangguan_imun, menu
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(hal_3_menu2.this, hal_10_daftarPustaka.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        main_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_3_menu2.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }

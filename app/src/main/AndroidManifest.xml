@@ -8,11 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SistemPertahananTubuh_new">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         <activity android:name=".hal_9_glosarium"></activity>
         <activity android:name=".hal_2_gangguan_imun" />
         <activity android:name=".hal_2_jenis_imun" />
+        <activity android:name=".hal_2_apersepsi" />
         <activity android:name=".hal_2_jenis_gangguan" />
         <activity android:name=".hal_2_mekanisme_adaptif" />
         <activity android:name=".hal_2_mekanisme_alami" />

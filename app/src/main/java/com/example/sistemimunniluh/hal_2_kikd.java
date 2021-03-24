@@ -5,18 +5,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_2_kikd extends AppCompatActivity {
 
-    Button  back;
+    ImageView back;
 
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hal2_kp);
+        setContentView(R.layout.activity_hal_2_kikd);
 
 
         back = findViewById(R.id.btnbck);

@@ -17,11 +17,11 @@
         android:padding="5dp"
         android:scaleX="1"
         android:scaleY="1">
-        <ImageView
-            android:id="@+id/b8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_8"></ImageView>
+<!--        <ImageView-->
+<!--            android:id="@+id/b8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_8"></ImageView>-->
     </LinearLayout>
 
 
@@ -109,9 +109,9 @@
             android:layout_height="wrap_content">
             <ImageButton
                 android:id="@+id/b_menu_vid_img"
-                android:layout_width="95dp"
-                android:layout_height="88dp"
-                android:background="@drawable/button_4"></ImageButton>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_home"></ImageButton>
         </LinearLayout>
     </LinearLayout>
 

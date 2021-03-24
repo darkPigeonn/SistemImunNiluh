@@ -4,12 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class hal_2_menu extends AppCompatActivity {
     //initialisai button ;
-    Button kataPengantar,ki_kd,arsepsi,petunjuk_penggunaan,s_imun,tujuan_pembelajaran, menu_vid_img, menu_materi, menu_latihan, menu_profil, menu_utama;
+    ImageButton kataPengantar,ki_kd,arsepsi,petunjuk_penggunaan,s_imun,tujuan_pembelajaran, menu_vid_img, menu_materi, menu_latihan, menu_profil, chat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,17 +18,26 @@ public class hal_2_menu extends AppCompatActivity {
         setContentView(R.layout.activity_hal_2_menu);
 
         //menghubungkan button initialsiasi dengan button di design
-        kataPengantar.findViewById(R.id.b_kp);
-        ki_kd.findViewById(R.id.b_kikd);
-        arsepsi.findViewById(R.id.b_aper);
-        petunjuk_penggunaan.findViewById(R.id.b_petunjuk);
-        s_imun.findViewById(R.id.b_simun);
-        tujuan_pembelajaran.findViewById(R.id.b_tp);
-        menu_vid_img.findViewById(R.id.b_menu_vid_img);
-        menu_materi.findViewById(R.id.b_menu_materi);
-        menu_latihan.findViewById(R.id.b_menu_latihan);
-        menu_profil.findViewById(R.id.b_profil);
-        menu_utama.findViewById(R.id.b_main_home);
+        kataPengantar = findViewById(R.id.b_kp);
+        ki_kd = findViewById(R.id.b_kikd);
+        arsepsi = findViewById(R.id.b_aper);
+        petunjuk_penggunaan  = findViewById(R.id.b_petunjuk);
+        s_imun = findViewById(R.id.b_simun);
+        tujuan_pembelajaran = findViewById(R.id.b_tp);
+        menu_vid_img = findViewById(R.id.b_menu_vid_img);
+        menu_materi = findViewById(R.id.b_menu_materi);
+        menu_latihan = findViewById(R.id.b_menu_latihan);
+        menu_profil = findViewById(R.id.b_profil);
+        chat = findViewById(R.id.b1chat);
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_2_menu.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         //membuat aksi ketika button di klik
         kataPengantar.setOnClickListener(new View.OnClickListener() {
@@ -114,10 +124,10 @@ public class hal_2_menu extends AppCompatActivity {
             }
         });
 
-        menu_utama.setOnClickListener(new View.OnClickListener() {
+        arsepsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_menu.this, hal_2_menu.class);
+                Intent intent = new Intent(hal_2_menu.this, hal_2_apersepsi.class);
                 startActivity(intent);
                 finish();
             }

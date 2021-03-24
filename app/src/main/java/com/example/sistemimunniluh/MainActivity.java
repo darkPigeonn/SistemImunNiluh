@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void request_user_name() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Enter Name");
+        builder.setTitle("Masukan namamu");
         final EditText input_field = new EditText(this);
         builder.setView(input_field);
         builder.setPositiveButton("OK ", new DialogInterface.OnClickListener() {
