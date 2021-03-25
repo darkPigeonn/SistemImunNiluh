@@ -56,7 +56,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_buku"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -71,7 +71,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_buku1"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -86,7 +86,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_buku2"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -101,7 +101,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -116,7 +116,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet1"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -131,7 +131,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet2"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -146,7 +146,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet3"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -161,7 +161,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet4"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -176,7 +176,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet5"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -191,7 +191,7 @@
                             android:padding="8dp"
                             android:text="@string/sumber_inet6"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -215,6 +215,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_home"></ImageView>
+
+        <ImageView
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_5"></ImageView>
     </LinearLayout>
 
 

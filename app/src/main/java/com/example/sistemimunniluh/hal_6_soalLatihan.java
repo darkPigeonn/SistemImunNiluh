@@ -38,21 +38,6 @@ public class hal_6_soalLatihan extends AppCompatActivity {
         setContentView(R.layout.activity_hal_6_soal_latihan);
 
 
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-////        Bundle categoryBundle = null;
-////        if (getIntent() != null) {
-////            categoryBundle = getIntent().getExtras();
-////        }
-////
-////        mParentLayout = findViewById(R.id.question_layout);
-////        if (categoryBundle != null) {
-////            String hexColor = String.format("#%06X", (0xFFFFFF & categoryBundle.getInt(CATEGORY_COLOR)));
-////            hexColor = "#44"+hexColor.substring(1);
-////            mParentLayout.setBackgroundColor(Color.parseColor(hexColor));
-////        }
-//
         mScoreTextView = findViewById(R.id.score);
         mRemaningQuestionsTextView = findViewById(R.id.remaining_questions);
 

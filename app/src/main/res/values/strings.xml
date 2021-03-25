@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">sistemPertahananTubuh_new</string>
-    <string name="link_video_1"><b>Sistem Kekebalan Tubuh: </b>https://www.youtube.com/watch?v=48H59dwQO8Y</string>
-    <string name="link_video_2"><b>Sistem kekebalan tubuh: kekebalan bawaan dan adaptif: </b>https://www.youtube.com/watch?v=PzunOgYHeyg </string>
-    <string name="link_video_3"><b>Biologi Kelas 11: Sistem Pertahanan Tubuh Spesifik dan Sistem Pertahanan Non-Spesifik: </b>https://www.youtube.com/watch?v=B-0Ryg_hvHk</string>
-    <string name="link_video_4"><b>Apa itu sel darah putih:</b> https://www.youtube.com/watch?v=Q3yX49JRaks</string>
-    <string name="link_video_5"><b>Apa itu Inflamasi?: </b>https://www.youtube.com/watch?v=alO_csFxHhQ</string>
-    <string name="link_video_6"><b>Fagositosis sel darah putih: </b>https://www.youtube.com/watch?v=C0FDq5gdGls</string>
-    <string name="link_video_7"><b>Hari kesehatan nasional: mengenal penyakit autoimun yang banyak tak disadari gejalanya: </b>https://www.youtube.com/watch?v=xqWeCXiLHnc </string>
-    <string name="link_video_8"><b>Bagaimana Virus Corona Menyerang Sistem Kekebalan Tubuh: </b>https://www.youtube.com/watch?v=ftNCj06d7KE</string>
-    <string name="link_video_9"><b>Cara meningkatkan sistem imun tubuh #BelajardiRumah: </b>https://www.youtube.com/watch?v=IdWx4hC375Y</string>
+    <string name="link_video_1"><b>Sistem Kekebalan Tubuh</b></string>
+    <string name="link_video_2"><b>Sistem kekebalan tubuh: kekebalan bawaan dan adaptif:</b> </string>
+    <string name="link_video_3"><b>Biologi Kelas 11: Sistem Pertahanan Tubuh Spesifik dan Sistem Pertahanan Non-Spesifik:</b></string>
+    <string name="link_video_4"><b>Apa itu sel darah putih:</b> </string>
+    <string name="link_video_5"><b>Apa itu Inflamasi?: </b></string>
+    <string name="link_video_6"><b>Fagositosis sel darah putih: </b></string>
+    <string name="link_video_7"><b>Hari kesehatan nasional: mengenal penyakit autoimun yang banyak tak disadari gejalanya: </b> </string>
+    <string name="link_video_8"><b>Bagaimana Virus Corona Menyerang Sistem Kekebalan Tubuh: </b></string>
+    <string name="link_video_9"><b>Cara meningkatkan sistem imun tubuh #BelajardiRumah: </b></string>
     <string name="link_gambar_1">Lapisan pertahanan tubuh terhadap penyakit. Sumber: <i> http://biologitopibiru.blogspot.com/2013/04/bagian-11-sistem-pertahanan-tubuh-pada.html. Diunduh 26 Januari 2021</i></string>
     <string name="link_gambar_2">Mekanisme pembentukan kekebalan tubuh. Sumber:https://docplayer.info/110358455-Sistem-pertahanan-tubuh-manusia.html. Diunduh 26 Januari 2021</string>
     <string name="link_gambar_3">Pertahanan tubuh non-spesifik (inflamasi) Sumber: https://www.nafiun.com/2012/12/pertahanan-tubuh-dengan-cara-peradangan-inflamatori.html. Diunduh 26 Januari 2021</string>
@@ -78,4 +78,5 @@ https://akurat.co/id-319690-read-tidak-mau-terkena-limfoma-lakukan-hal-ini. Diun
     <string name="penguatan_1">"Ayooo!!!  biasakan membaca 10 sampai 15 menit sebelum pelajaran dimulai!! "</string>
     <string name="penguatan_2">"Dapatkah plasma darah jadi pengobatan sementara pasien Covid-19? Bagaimana pendapat kalian? Apakah kalian setuju atau ada pendapat lain mengenai pernyataan di atas?? Berikan opinimu! "</string>
     <string name="penguatan_3">"Sistem pertahanan tubuh berperan penting bagi kesehatan seseorang. Dengan adanya sistem pertahanan tubuh, tubuh dapat terhindar dari serangan patogen penyebab penyakit. Namun, sistem pertahanan dapat mengalami penurunan. Apabila sistem pertahanan tubuh melemah, tubuh akan mudah terserang penyakit. Melemahnya sistem sistem pertahanan tubuh disebabkan oleh beberapa faktor. Salah satunya pola hidup yang kurang baik. saat ini, penularan virus corona sangat mudah dan cepat karena masyarakat belum menyadari pentingnya menjaga pola hidup sehat dan tidak menerapkan prokes Covid-19 3M yang dianjurkan pemerintah, yakni: (1) Memakai masker, (2) Mencuci tangan, (3) Menjaga jarak. Pola hidup sehat berawal dari diri kita sendiri, mulai dari rajin mencuci tangan dengan sabun, tidur yang teratur, rajin olahraga, serta makan makanan yang bergizi. Apakah anda dan keluarga sudah menerapkan pola hidup sehat dan 3M ? "</string>
+    <string name="message">tulis pesanmu</string>
 </resources>

@@ -48,4 +48,15 @@ public class DataForo {
 
         return list;
     }
+
+    public static ArrayList<Foto> getData(int position) {
+        ArrayList<Foto> list = new ArrayList<>();
+
+        Foto foto = new Foto();
+        foto.setName(namafoto[position]);
+        foto.setPhoto(heroesImages[position]);
+        list.add(foto);
+
+        return list;
+    }
 }

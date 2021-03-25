@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/viewImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/detailteks"
+            android:background="@color/cardview_light_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/atas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            tools:text="@string/heroes_name"
+            android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

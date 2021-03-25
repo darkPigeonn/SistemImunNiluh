@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.sistemimunniluh.Chat.MainActivity_Chat;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,80 +30,113 @@ import java.util.Map;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
+        private  Button add_room;
+        private  EditText room_name;
+        private ListView listView;
+        private String name;
+        private String id;
+        private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
 
-    private Button add_room;
-    private EditText room_name;
-    private ListView listView;
-    private String name;
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
+        private ArrayAdapter<String> arrayAdapter;
+        private ArrayList<String> list_of_rooms = new ArrayList();
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            add_room = (Button)findViewById(R.id.btnAdd_room);
+            room_name = (EditText)findViewById(R.id.etNeme_room);
+            listView = (ListView)findViewById(R.id.listView);
 
-    private ArrayAdapter<String> arrayAdapter;
-    private ArrayList<String> list_of_rooms = new ArrayList();
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        add_room = (Button)findViewById(R.id.btnAdd_room);
-        room_name = (EditText)findViewById(R.id.etNeme_room);
-        listView = (ListView)findViewById(R.id.listView);
+            arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list_of_rooms);
+            listView.setAdapter(arrayAdapter);
 
-        arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list_of_rooms);
-        listView.setAdapter(arrayAdapter);
+            request_user_name();
+            request_user_id();
+            add_room.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
 
-        request_user_name();
-        add_room.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(room_name.getText().toString(),"");
+                    root.updateChildren(map);
 
-                Map<String,Object> map = new HashMap<String,Object>();
-                map.put(room_name.getText().toString(),"");
-                root.updateChildren(map);
-
-            }
-        });
-        root.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Set<String> set = new HashSet<String>();
-                Iterator i = dataSnapshot.getChildren().iterator();
-                while ( i.hasNext())
-                {
-                    set.add(((DataSnapshot)i.next()).getKey());
                 }
-                list_of_rooms.clear();
-                list_of_rooms.addAll(set);
+            });
+            root.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Set<String> set = new HashSet<String>();
+                    Iterator i = dataSnapshot.getChildren().iterator();
+                    while ( i.hasNext())
+                    {
+                        set.add(((DataSnapshot)i.next()).getKey());
+                    }
+                    list_of_rooms.clear();
+                    list_of_rooms.addAll(set);
 
-                arrayAdapter.notifyDataSetChanged();
-            }
+                    arrayAdapter.notifyDataSetChanged();
+                }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
 
-            }
-        });
+                }
+            });
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Intent I = new Intent(getApplicationContext(),chatroom.class);
-                I.putExtra("room_name",((TextView)view).getText().toString());
-                I.putExtra("user_name",name);
-                startActivity(I);
-            }
-        });
+                    Intent I = new Intent(getApplicationContext(), MainActivity_Chat.class);
+                    I.putExtra("room_name",((TextView)view).getText().toString());
+                    I.putExtra("id_user",id);
+                    I.putExtra("user_name",name);
+                    startActivity(I);
+                }
+            });
 
-    }
+        }
 
-    private void request_user_name() {
+        private void request_user_name() {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Masukan Nama");
+            final EditText input_field = new EditText(this);
+            builder.setView(input_field);
+            builder.setPositiveButton("OK ", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    name = input_field.getText().toString();
+
+                    if(name.isEmpty()){
+                        dialogInterface.cancel();
+                        request_user_name();
+                    }
+                }
+            });
+            builder.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.cancel();
+                    request_user_name();
+                }
+            });
+            builder.show();
+        }
+
+    private void request_user_id() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Masukan namamu");
+        builder.setTitle("Masukan Nomor Siswa");
         final EditText input_field = new EditText(this);
         builder.setView(input_field);
         builder.setPositiveButton("OK ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                name = input_field.getText().toString();
+                id = input_field.getText().toString();
+
+                if (id.isEmpty()){
+                    dialogInterface.cancel();
+                    request_user_id();
+                }
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -114,4 +148,6 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.show();
     }
+
+
 }
