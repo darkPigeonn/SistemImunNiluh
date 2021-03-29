@@ -29,7 +29,7 @@ ImageButton pilgan, essay, tugas, evaluasi, menu_materi;
             public void onClick(View v) {
                 Intent intent = new Intent(hal_5_menulatihan.this, hal_6_soalLatihan.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hal1_2_3_5">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:text="Nilai Kamu :"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="65sp"
+        android:text="100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"
+        android:textStyle="bold"
+        android:text="Hasil Jawaban Kamu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ulangi"
+        android:text="Ulangi Kuis"/>
+
+</LinearLayout>

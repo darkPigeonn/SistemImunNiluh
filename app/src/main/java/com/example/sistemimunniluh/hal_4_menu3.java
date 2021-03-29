@@ -25,26 +25,7 @@ ImageView glosarium,daftar;
         gambar = findViewById(R.id.b_gambar);
         menu_vid_img = findViewById(R.id.b_menu_vid_img);
 
-        glosarium = findViewById(R.id.btnglosa);
-        daftar = findViewById(R.id.btndaftar_pustaka);
 
-        glosarium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(hal_4_menu3.this,hal_9_glosarium.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        daftar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(hal_4_menu3.this,hal_10_daftarPustaka.class);
-                startActivity(intent);
-                finish();
-            }
-        });
         penguatan_karakter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

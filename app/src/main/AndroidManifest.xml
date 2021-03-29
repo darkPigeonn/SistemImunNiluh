@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".GridFoto.ViewGambar"></activity>
-        <activity android:name=".Chat.MainActivity_Chat"></activity>
+        <activity android:name=".pilgan.HasilKuis"></activity>
+        <activity android:name=".GridFoto.ViewGambar" />
+        <activity android:name=".Chat.MainActivity_Chat" />
         <activity android:name=".hal_9_glosarium" />
         <activity android:name=".hal_2_gangguan_imun" />
         <activity android:name=".hal_2_jenis_imun" />
@@ -37,7 +38,7 @@
         <activity android:name=".hal_4_menu3_video" />
         <activity android:name=".hal_3_menu2" />
         <activity android:name=".hal_2_menu" />
-        <activity android:name=".hal_10_daftarPustaka"/>
+        <activity android:name=".hal_10_daftarPustaka" />
         <activity android:name=".hal_1_welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
