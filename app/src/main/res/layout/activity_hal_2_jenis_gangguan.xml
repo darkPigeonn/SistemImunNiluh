@@ -5,21 +5,57 @@
     android:layout_height="match_parent"
 
     android:theme="@style/Theme.AppCompat.NoActionBar"
-    android:background="@drawable/back_jenis_ganggu">
+    android:background="@drawable/background_hal1_2_3_5">
+
 
     <LinearLayout
         android:id="@+id/ln1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="360dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="center"
-        android:orientation="vertical">
-        <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/judul_jenis_gangguan">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ln1"
+        android:background="@drawable/export_centre">
+
+        <TextView
+            android:id="@id/ln2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:text="@string/pilih_button"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ln3"
+            android:layout_below="@id/ln2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,6 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_gangguan"></ImageButton>
+            </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
