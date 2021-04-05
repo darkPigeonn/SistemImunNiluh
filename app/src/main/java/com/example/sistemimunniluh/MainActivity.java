@@ -6,6 +6,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
+import android.text.TextUtils;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sistemimunniluh.Chat.MainActivity_Chat;
 import com.google.firebase.database.DataSnapshot;
@@ -55,10 +59,15 @@ public class MainActivity extends AppCompatActivity {
             add_room.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+//
+                    if (TextUtils.isEmpty(room_name.getText())){
+                        Toast.makeText(MainActivity.this, "Silahkan tulis terlebih dahulu topik diskusinya!", Toast.LENGTH_SHORT).show();
+                    }else{
+                        Map<String,Object> map = new HashMap<String,Object>();
+                        map.put(room_name.getText().toString(),"");
+                        root.updateChildren(map);
+                    }
 
-                    Map<String,Object> map = new HashMap<String,Object>();
-                    map.put(room_name.getText().toString(),"");
-                    root.updateChildren(map);
 
                 }
             });
@@ -126,11 +135,15 @@ public class MainActivity extends AppCompatActivity {
     private void request_user_id() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Masukan Nomor Siswa");
-        final EditText input_field = new EditText(this);
+        EditText input_field = new EditText(this);
+        input_field.setInputType(InputType.TYPE_CLASS_NUMBER);
+        //input_field.setTransformationMethod(.getInstance());
         builder.setView(input_field);
+
         builder.setPositiveButton("OK ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+
                 id = input_field.getText().toString();
 
                 if (id.isEmpty()){
@@ -143,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.cancel();
-                request_user_name();
+                request_user_id();
             }
         });
         builder.show();

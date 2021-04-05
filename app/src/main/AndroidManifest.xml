@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".pilgan.HasilKuis"></activity>
+        <activity android:name=".tugasmandiri"></activity>
+        <activity android:name=".pilgan.HasilKuis" />
         <activity android:name=".GridFoto.ViewGambar" />
         <activity android:name=".Chat.MainActivity_Chat" />
         <activity android:name=".hal_9_glosarium" />
