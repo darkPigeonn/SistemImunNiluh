@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bawah">
-        <com.example.sistemimunniluh.pilgan.ToggleButtonGroupTableLayout
+        <com.gratiasdeveloper.sistemimunniluh.pilgan.ToggleButtonGroupTableLayout
             android:id="@+id/table_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
 
             </RadioGroup>
 
-        </com.example.sistemimunniluh.pilgan.ToggleButtonGroupTableLayout>
+        </com.gratiasdeveloper.sistemimunniluh.pilgan.ToggleButtonGroupTableLayout>
 
     </ScrollView>
     <LinearLayout

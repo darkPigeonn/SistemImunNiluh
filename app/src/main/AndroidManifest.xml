@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sistemimunniluh">
+    package="com.gratiasdeveloper.sistemimunniluh">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,43 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".tugasmandiri"></activity>
-        <activity android:name=".pilgan.HasilKuis" />
-        <activity android:name=".GridFoto.ViewGambar" />
-        <activity android:name=".Chat.MainActivity_Chat" />
-        <activity android:name=".hal_9_glosarium" />
-        <activity android:name=".hal_2_gangguan_imun" />
-        <activity android:name=".hal_2_jenis_imun" />
-        <activity android:name=".hal_2_apersepsi" />
-        <activity android:name=".hal_2_jenis_gangguan" />
-        <activity android:name=".hal_2_mekanisme_adaptif" />
-        <activity android:name=".hal_2_mekanisme_alami" />
-        <activity android:name=".hal_2_mekanisme" />
-        <activity android:name=".hal_2_faktor" />
-        <activity android:name=".hal_2_pengertian" />
-        <activity android:name=".hal_2_tujuan" />
-        <activity android:name=".hal_2_kikd" />
-        <activity android:name=".hal_2_petunjuk" />
-        <activity android:name=".hal2_kp" />
-        <activity android:name=".hal_8_profilPenyusun" />
-        <activity android:name=".hal_7_nilai" />
-        <activity android:name=".hal_6_soalLatihan" />
-        <activity android:name=".hal_5_menulatihan" />
-        <activity android:name=".hal_4_menu3" />
-        <activity android:name=".hal_4_menu3_gambar" />
-        <activity android:name=".hal_4_menu3_penguatan" />
-        <activity android:name=".hal_4_menu3_video" />
-        <activity android:name=".hal_3_menu2" />
-        <activity android:name=".hal_2_menu" />
-        <activity android:name=".hal_10_daftarPustaka" />
-        <activity android:name=".hal_1_welcome">
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.tugasmandiri"></activity>
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.pilgan.HasilKuis" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.GridFoto.ViewGambar" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.Chat.MainActivity_Chat" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_9_glosarium" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_gangguan_imun" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_jenis_imun" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_apersepsi" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_jenis_gangguan" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_mekanisme_adaptif" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_mekanisme_alami" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_mekanisme" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_faktor" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_pengertian" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_tujuan" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_kikd" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_petunjuk" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal2_kp" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_8_profilPenyusun" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_7_nilai" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_6_soalLatihan" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_5_menulatihan" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_4_menu3" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_4_menu3_gambar" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_4_menu3_penguatan" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_4_menu3_video" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_3_menu2" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_2_menu" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_10_daftarPustaka" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.hal_1_welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.gratiasdeveloper.sistemimunniluh.MainActivity" />
     </application>
 
 </manifest>
