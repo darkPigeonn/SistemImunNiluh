@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
 
     android:theme="@style/Theme.SistemPertahananTubuh_new"
-    android:background="@drawable/spbaru">
+    android:background="@drawable/spnewe">
 
 </RelativeLayout>

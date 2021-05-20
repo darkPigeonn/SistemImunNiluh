@@ -34,7 +34,6 @@ public class hal_2_menu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(hal_2_menu.this,MainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
