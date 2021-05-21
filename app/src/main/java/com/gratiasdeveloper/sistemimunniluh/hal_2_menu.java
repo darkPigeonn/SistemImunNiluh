@@ -71,7 +71,7 @@ public class hal_2_menu extends AppCompatActivity {
         s_imun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_2_menu.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_2_menu.this, hal_9_glosarium.class);
                 startActivity(intent);
                 finish();
             }

@@ -18,7 +18,7 @@ public class hal_4_menu3_penguatan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_4_menu3_penguatan);
 
-        home_imun = findViewById(R.id.btnhome);
+
         back = findViewById(R.id.btnbck);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -30,14 +30,7 @@ public class hal_4_menu3_penguatan extends AppCompatActivity {
             }
         });
 
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_4_menu3_penguatan.this, hal_2_menu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
 
     }

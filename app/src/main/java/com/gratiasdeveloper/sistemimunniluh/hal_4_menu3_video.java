@@ -23,7 +23,6 @@ public class hal_4_menu3_video extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_4_menu3_video);
 
-        home_imun = findViewById(R.id.btnhome);
         back = findViewById(R.id.btnbck);
         webViewSaya = findViewById(R.id.webViewSaya);
 
@@ -36,14 +35,6 @@ public class hal_4_menu3_video extends AppCompatActivity {
         webViewSaya.getSettings().setDefaultFontSize(18);
 
         //
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_4_menu3_video.this, hal_2_menu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,11 +17,7 @@
         android:padding="5dp"
         android:scaleX="1"
         android:scaleY="1">
-        <ImageView
-            android:id="@+id/btnglosa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_glosarium"></ImageView>
+
 
         <ImageView
             android:id="@+id/btndaftar_pustaka"

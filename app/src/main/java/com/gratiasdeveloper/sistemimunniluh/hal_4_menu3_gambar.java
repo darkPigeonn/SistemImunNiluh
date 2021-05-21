@@ -2,7 +2,9 @@ package com.gratiasdeveloper.sistemimunniluh;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -31,30 +33,20 @@ public class hal_4_menu3_gambar extends AppCompatActivity {
 
         list.addAll(DataForo.getListData());
         showRecyclerList();
-//        home_imun.findViewById(R.id.btnhome);
-//        back.findViewById(R.id.btnbck);
-//
-//        home_imun.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(hal_4_menu3_gambar.this, hal_3_menu2.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
-//
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(hal_4_menu3_gambar.this, hal_4_menu3.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
+
+        ImageView back = findViewById(R.id.btnbck);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(hal_4_menu3_gambar.this, hal_4_menu3.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void showRecyclerList() {
-        rvHeroes.setLayoutManager(new GridLayoutManager(this,2));
+        rvHeroes.setLayoutManager(new GridLayoutManager(this,1));
         GridFotoAdapater listHeroAdapter = new GridFotoAdapater(list);
         rvHeroes.setAdapter(listHeroAdapter);
 

@@ -18,17 +18,10 @@ public class hal_2_pengertian extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_2_pengertian);
 
-        home_imun = findViewById(R.id.btnhome);
+
         menu_materi = findViewById(R.id.btnhome22);
 
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_2_pengertian.this, hal_2_menu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override

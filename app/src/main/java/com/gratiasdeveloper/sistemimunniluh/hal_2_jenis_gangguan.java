@@ -18,7 +18,7 @@ public class hal_2_jenis_gangguan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hal_2_jenis_gangguan);
 
-        home_imun = findViewById(R.id.btnhome);
+
         menu_materi = findViewById(R.id.btnhome2);
 
         jenis = findViewById(R.id.b_jenis);
@@ -36,14 +36,6 @@ public class hal_2_jenis_gangguan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(hal_2_jenis_gangguan.this, hal_2_jenis_imun.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_2_jenis_gangguan.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }

@@ -6,15 +6,11 @@ import java.util.ArrayList;
 
 public class DataForo {
     private static  String[] namafoto = {
-            "Lapisan pertahanan tubuh terhadap penyakit",
-            "Mekanisme pembentukan kekebalan tubuh.",
-            "Pertahanan tubuh non-spesifik (inflamasi).",
+            "Perbedaan respons non-spesifik dengan respons spesifik",
+            "Cara kerja vaksin ",
             "Proses fagositosis.",
-            "Makrofag yang sedang memakan patogen/bakteri.",
-            "Mekanisme penghancuran bakteri oleh protein komplemen.",
             "Gangguan sistem kekebalan tubuh berupa Alergi.",
             "Penyakit autoimun: Myasthenia gravis.",
-            "Penyakit autoimun: Graves disease.",
             "Penyakit autoimun: Lupus.",
             "Imunodefisiensi primer, yakni Severe Combined Immunodeficiency / (bubble boy disease).",
             "Imunodefisiensi primer, yakni Sindrom DiGeorge.",
@@ -24,13 +20,9 @@ public class DataForo {
     private static int[] heroesImages={
       R.drawable.gambar_1,
       R.drawable.gambar_2,
-      R.drawable.gambar_3,
       R.drawable.gambar_4,
-      R.drawable.gambar_5,
-      R.drawable.gambar_6,
       R.drawable.gambar_7,
       R.drawable.gambar_8,
-      R.drawable.gambar_9,
       R.drawable.gambar_10,
       R.drawable.gambar_11,
       R.drawable.gambar_12,

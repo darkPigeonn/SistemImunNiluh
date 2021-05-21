@@ -21,7 +21,7 @@ ImageView home_imun, menu_materi;
 
         pertahanan_adaptif = findViewById(R.id.b_adaptif);
         pertahanan_alamiah = findViewById(R.id.b_alami);
-        home_imun = findViewById(R.id.btnhome);
+//        home_imun = findViewById(R.id.btnhome);
         menu_materi = findViewById(R.id.btnhome2);
 
         pertahanan_adaptif.setOnClickListener(new View.OnClickListener() {
@@ -42,14 +42,14 @@ ImageView home_imun, menu_materi;
             }
         });
 
-        home_imun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_2_mekanisme.this, hal_2_menu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        home_imun.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(hal_2_mekanisme.this, hal_2_menu.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override

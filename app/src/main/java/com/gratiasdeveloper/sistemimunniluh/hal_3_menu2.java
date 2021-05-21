@@ -25,7 +25,6 @@ ImageView glosarium, daftar_pustaka;
         faktor_imun = findViewById(R.id.b_faktor);
         jenis_gangguan_imun = findViewById(R.id.b_jenisimun);
 
-        glosarium = findViewById(R.id.btnglosa);
         daftar_pustaka = findViewById(R.id.btndaftar_pustaka);
 
         home.setOnClickListener(new View.OnClickListener() {
@@ -74,14 +73,6 @@ ImageView glosarium, daftar_pustaka;
 
 
 
-        glosarium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_3_menu2.this, hal_9_glosarium.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         daftar_pustaka.setOnClickListener(new View.OnClickListener() {
             @Override

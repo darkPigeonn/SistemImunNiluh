@@ -13,7 +13,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
-        <com.jsibbold.zoomage.ZoomageView
+        <com.zolad.zoominimageview.ZoomInImageView
             android:layout_gravity="center_vertical"
             android:id="@+id/viewImage"
             android:layout_width="match_parent"
