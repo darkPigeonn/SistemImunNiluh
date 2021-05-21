@@ -2,6 +2,7 @@ package com.gratiasdeveloper.sistemimunniluh;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -28,5 +29,10 @@ public class hal_2_petunjuk extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public void tombol1(View view) {
+        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/14k-wxzbcuRofSeHCk4vPMIHgyejxDJvg/view?usp=drive_web"));
+        startActivity(implicit);
     }
 }
