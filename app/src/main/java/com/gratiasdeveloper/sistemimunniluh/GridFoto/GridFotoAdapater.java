@@ -16,7 +16,7 @@ import com.gratiasdeveloper.sistemimunniluh.R;
 import java.util.ArrayList;
 
 public class GridFotoAdapater extends RecyclerView.Adapter<GridFotoAdapater.GridViewHolder> {
-    private ArrayList<Foto> listFoto;
+        private ArrayList<Foto> listFoto;
 
 
     public GridFotoAdapater(ArrayList<Foto> list) {

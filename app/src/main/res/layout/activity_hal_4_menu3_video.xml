@@ -3,26 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <WebView
-        android:id="@+id/webViewSaya"
-        android:layout_width="560dp"
-        android:layout_height="315dp"
-        android:layout_alignParentTop="true"/>
-
     <ScrollView
-        android:id="@+id/sc1"
-        android:layout_below="@+id/webViewSaya"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
+            android:padding="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="48H59dwQO8Y"/>
             <Button
                 android:id="@+id/btnVideo1"
                 android:layout_width="match_parent"
@@ -33,6 +34,13 @@
                 android:text="@string/link_video_1"
                 />
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="PzunOgYHeyg"/>
             <Button
                 android:id="@+id/btnVideo2"
                 android:layout_width="match_parent"
@@ -42,6 +50,13 @@
                 tools:ignore="OnClick"
                 android:text="@string/link_video_2" />
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="B-0Ryg_hvHk"/>
             <Button
                 android:id="@+id/btnVideo3"
                 android:layout_width="match_parent"
@@ -50,6 +65,14 @@
                 android:onClick="Video3"
                 tools:ignore="OnClick"
                 android:text="@string/link_video_3" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="Q3yX49JRaks"/>
             <Button
                 android:id="@+id/btnVideo4"
                 android:layout_width="match_parent"
@@ -58,6 +81,14 @@
                 android:onClick="Video4"
                 tools:ignore="OnClick"
                 android:text="@string/link_video_4" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="alO_csFxHhQ"/>
             <Button
                 android:id="@+id/btnVideo5"
                 android:layout_width="match_parent"
@@ -67,6 +98,13 @@
                 tools:ignore="OnClick"
                 android:text="@string/link_video_5" />
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="C0FDq5gdGls"/>
             <Button
                 android:id="@+id/btnVideo6"
                 android:layout_width="match_parent"
@@ -76,6 +114,13 @@
                 tools:ignore="OnClick"
                 android:text="@string/link_video_6" />
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="xqWeCXiLHnc"/>
             <Button
                 android:id="@+id/btnVideo7"
                 android:onClick="Video7"
@@ -85,6 +130,13 @@
                 android:layout_weight="1"
                 android:text="@string/link_video_7" />
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="ftNCj06d7KE"/>
             <Button
                 android:id="@+id/btnVideo8"
                 android:onClick="Video8"
@@ -93,7 +145,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/link_video_8" />
-
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:videoId="IdWx4hC375Y"/>
             <Button
                 android:id="@+id/btnVideo9"
                 android:onClick="Video9"
@@ -103,8 +161,8 @@
                 android:layout_weight="1"
                 android:text="@string/link_video_9" />
         </LinearLayout>
-
     </ScrollView>
+
 
     <LinearLayout
     android:id="@+id/ln3"

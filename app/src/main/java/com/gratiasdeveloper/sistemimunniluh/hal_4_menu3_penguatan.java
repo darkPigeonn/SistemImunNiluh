@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -33,5 +34,15 @@ public class hal_4_menu3_penguatan extends AppCompatActivity {
 
 
 
+    }
+
+    public void kuis1(View view) {
+        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("http://gg.gg/Kuis-1-Penguatan-Karakter"));
+        startActivity(implicit);
+    }
+
+    public void kuis2(View view) {
+        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("http://gg.gg/Kuis-2-Penguatan-Karakter"));
+        startActivity(implicit);
     }
 }
