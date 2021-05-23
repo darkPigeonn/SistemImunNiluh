@@ -32,7 +32,7 @@ public class hal_2_petunjuk extends AppCompatActivity {
     }
 
     public void tombol1(View view) {
-        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/14k-wxzbcuRofSeHCk4vPMIHgyejxDJvg/view?usp=drive_web"));
+        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1RHzKUp32CWFwiSXxWfj7eF8UeRrZiid2/view?usp=sharing"));
         startActivity(implicit);
     }
 }
