@@ -210,17 +210,13 @@
         android:scaleX="1"
         android:scaleY="1">
 
-        <ImageView
-            android:id="@+id/btnhome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_home"></ImageView>
+
 
         <ImageView
             android:id="@+id/btnback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_5"></ImageView>
+            android:background="@drawable/button_back"></ImageView>
     </LinearLayout>
 
 

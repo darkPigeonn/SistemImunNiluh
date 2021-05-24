@@ -18,7 +18,7 @@ public class hal_9_glosarium extends AppCompatActivity {
         setContentView(R.layout.activity_hal_9_glosarium);
 
         home_imun = findViewById(R.id.btnhome);
-        back = findViewById(R.id.btnback);
+
 
         home_imun.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,13 +29,6 @@ public class hal_9_glosarium extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hal_9_glosarium.this, hal_3_menu2.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
     }
 }

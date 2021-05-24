@@ -64,7 +64,7 @@ ImageButton pilgan, essay, tugas, evaluasi, menu_materi;
         menu_materi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(hal_5_menulatihan.this, hal_3_menu2.class);
+                Intent intent = new Intent(hal_5_menulatihan.this, hal_2_menu.class);
                 startActivity(intent);
                 finish();
             }

@@ -110,9 +110,9 @@
             android:layout_height="wrap_content">
             <ImageButton
                 android:id="@+id/b_menu_materi"
-                android:layout_width="105dp"
+                android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="@drawable/button_5"></ImageButton>
+                android:background="@drawable/button_home"></ImageButton>
         </LinearLayout>
     </LinearLayout>
 

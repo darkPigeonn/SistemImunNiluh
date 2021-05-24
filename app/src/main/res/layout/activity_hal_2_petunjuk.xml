@@ -11,11 +11,11 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
         <ScrollView
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="150dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:background="@color/white"
+                android:background="@color/tes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">

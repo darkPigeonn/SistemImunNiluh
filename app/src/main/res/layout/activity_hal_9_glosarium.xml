@@ -55,13 +55,8 @@
             android:id="@+id/btnhome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_home"></ImageView>
+            android:background="@drawable/button_back"></ImageView>
 
-        <ImageView
-            android:id="@+id/btnback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_5"></ImageView>
     </LinearLayout>
 
 </RelativeLayout>
